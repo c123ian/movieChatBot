@@ -2,13 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const http = require('http');
-//////create seerver and define parsing strategies
-//const server = express();
-//server.use(bodyParser.urlencoded({
-  //  extended: true
-//}));
 
-//server.use(bodyParser.json());
 
 /////heroku Server
 var app = express();
@@ -49,7 +43,4 @@ server.post('/get-movie-details', function (req, res) {
         });
     });
 });
-///setup server to listen
-//server.listen((process.env.PORT || 8000), function () {
-//    console.log("Server is up and running...");
-//});
+
